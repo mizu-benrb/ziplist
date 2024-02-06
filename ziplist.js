@@ -12,9 +12,7 @@ const zipList = (arr1, arr2) => {
 
 const zipListTheSimpleWay = (arr1, arr2) => {
   const zipSeparated = _.zip(arr1, arr2);
-  //const zippedArr = [];
-  //_.each(zipSeparated, (elemArr) => { zippedArr.concat(elemArr) });
-  return zipSeparated;
+  return _.flatten(zipSeparated);
 }
 
 let arr1 = ['a','b','c'];
